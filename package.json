@@ -13,6 +13,9 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "jest": "^30.0.0"
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^30.0.0",
+    "js-yaml": "^4.1.0",
+    "ts-jest": "^29.4.0"
   }
 }

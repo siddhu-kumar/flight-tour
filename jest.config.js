@@ -1,10 +1,13 @@
 export default {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
   transform: {
-    '^.+\\.jsx?$': 'babel-jest', // or 'ts-jest' if you're using TypeScript
+    '^.+\\.tsx?$': 'ts-jest', // Handle TypeScript files
+    '^.+\\.yaml$': '<rootDir>/yamlTransformer.js', // Custom transformer for YAML files
+    '^.+\\.yml$': '<rootDir>/yamlTransformer.js', // Custom transformer for YML files
   },
-  extensionsToTreatAsEsm: ['.js'],
   moduleNameMapper: {
-    // Add any necessary mappings for non-JS modules here
+    '\\.(css|scss)$': 'identity-obj-proxy', // Mock for CSS and SCSS files
+    '\\.(jpg|jpeg|png|gif|svg)$': '<rootDir>/__mocks__/fileMock.js', // Mock for image files
   },
 };
-    
