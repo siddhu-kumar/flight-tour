@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --port 3000 --host",
     "build": "vite build",
+    "start": "node server.js --port 3001 --host",
     "test": "node --experimental-vm-modules ./node_modules/.bin/jest",
     "serve": "vite preview --port 3000 --host"
   },
