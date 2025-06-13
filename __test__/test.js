@@ -24,6 +24,6 @@ describe('HTML Content Tests', () => {
 
   test('should contain the correct description', () => {
     const descriptionElement = document.querySelector('.description');
-    expect(descriptionElement.textContent).toBe('This is a simple HTML content for testing.');
+    expect(descriptionElement.textContent).toBe('This is a simple HTML content for testing, it is working.');
   });
 });
