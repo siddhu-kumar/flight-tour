@@ -1,8 +1,8 @@
-const yaml = require('js-yaml');
+import yaml from 'js-yaml';
 
-module.exports = {
+export default {
   process(src) {
     const doc = yaml.load(src);
-    return `module.exports = ${JSON.stringify(doc)};`;
+    return `export default ${JSON.stringify(doc)};`;
   },
 };
